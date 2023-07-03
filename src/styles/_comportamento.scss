@@ -1,0 +1,36 @@
+@use 'variaveis';
+
+.comportamento{
+    background-image: linear-gradient(to bottom, #b12a5b 0%, #8fd3f4 60%);
+    padding: 40px 0;
+    overflow-x: hidden;
+
+    .container{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+
+    }
+
+    &__image{
+        max-width: 360px;
+    }
+
+    &__text{
+        color: variaveis.$corDaFont;
+    }
+
+    @media (max-width:640px){
+
+        .container{
+            display: block;
+        }
+
+        &__image{
+            max-width: 100%;
+            margin-bottom: 24px;
+        }
+
+    }
+}

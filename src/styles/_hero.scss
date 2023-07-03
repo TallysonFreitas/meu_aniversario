@@ -1,0 +1,91 @@
+@use 'variaveis';
+
+.hero{
+    background-image: url(../images/aniversario.png);
+    height: 600px;
+    background-repeat: none;
+    background-size: cover;
+    position: relative;
+
+    .container{
+        position: relative;
+    }
+
+    &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity:50%;
+    }
+
+    &__title{
+        font-size: 40px;
+        color: variaveis.$corDaFont;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    &__tempo{
+        display: block;
+    }
+
+    &__check{
+        background-color: variaveis.$corDaFont;
+        padding: 20px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+
+        &__list{
+            display: flex;
+            list-style: none;
+            gap:30px;
+        }
+
+        &__button{
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            background-color: #f44;
+            padding: 8px 20px;
+
+            &:hover{
+                background-color: darken(#f44, 8%);
+            }
+        }
+    }
+
+    @media (max-width:1024px){
+        height:400px;
+    }
+
+    @media (max-width:640px){
+        height: 200px;
+
+        &__title{
+            font-size: 24px;
+        }
+
+        &__check{
+            display: block;
+
+            &__list{
+                display: block;
+                margin-bottom:16px;
+            }
+
+            &__button{
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+
+    
+
+    
+}

@@ -1,0 +1,40 @@
+@use 'variaveis';
+
+.requisitos{
+    background-image: linear-gradient(to bottom,#a18cd1 60%, #b12a5b 100%);
+    padding: 40px 0;
+    overflow-x: hidden;
+
+    .container{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+
+    }
+
+    &__image{
+        max-width: 360px;
+    }
+
+    &__text{
+        color: variaveis.$corDaFont;
+    }
+
+    @media (max-width:640px){
+
+        .container{
+            display: block;
+        }
+
+        &__image{
+            max-width: 100%;
+            margin-bottom: 24px;
+        }
+
+    }
+
+    @media (max-width:1024px){
+
+    }
+}

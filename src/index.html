@@ -1,14 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles/main.scss">
     <title>Document</title>
 </head>
-<body>
-    
-
+<body> 
+    <header class="hero">
+        <div class="container">
+            <h2 class="hero__title">Meu aniversário <span id="contador" class="hero__tempo"></span></h2>
+            <div class="hero__check">
+                <ul class="hero__check__list">
+                    <li>
+                        <strong>Evento</strong><br>
+                        Meu Aniversário
+                    </li>
+                    <li>
+                        <strong>Horário</strong><br>
+                        19:00
+                    </li>
+                    <li>
+                        <strong>Tema</strong><br>
+                        Gari
+                    </li>
+                </ul>
+                <a class="hero__check__button" href="#">Garantir Presença</a>
+            </div>
+        </div>   
+    </header>  
+    <section class="evento">
+        <div class="container" data-aos="fade-right">
+            <img class="evento__image" src="https://i.pinimg.com/736x/25/4f/23/254f233e7d6b8ca3ddc28b884f91cae0.jpg" alt="">
+            <div class="evento__text">
+                <h2>Sobre</h2>
+                <p>Uma festa apenas para os manos que varrem a rua.</p>
+            </div>
+    </section> 
+    <section class="requisitos reverse">
+        <div class="container" data-aos="fade-left">
+            <img class="requisitos__image" src="images/gari.png" alt="">
+            <div class="requisitos__text">
+                <h2>Requisitos</h2>
+                <p>Basta ter nascido antes de 2022, ser maior de idade, ser gari e ter shape.</p>
+            </div>
+    </section>
+    <section class="comportamento">
+        <div class="container" data-aos="fade-right">
+            <img class="comportamento__image" src="https://s2.glbimg.com/0Q5U5ot53aTowrWkcs3UyQKeLo0=/620x350/e.glbimg.com/og/ed/f/original/2015/11/15/cerebro-como-fazer-melhor-uso-na-sua-carreira.jpg" alt="">
+            <div class="comportamento__text">
+                <h2>Comportamento</h2>
+                <p>Apenas serao aceitas conversas sobre: <br> Politica, Drogas, Ideologia de genero, Jogo do bixo, Como ganhar na Loto, Carro bixado...</p>
+            </div>
+    </section>
+    <section class="entrada reverse">
+        <div class="container" data-aos="fade-left">
+            <img class="entrada__image" src="https://i.guim.co.uk/img/media/b78eba8720659708cba9c1c5338a7e7773a56446/0_85_4288_2572/master/4288.jpg?width=1200&quality=85&auto=format&fit=max&s=821d4a9159836868ba6e066ab0a15688" alt="">
+            <div class="entrada__text">
+                <h2>Entrada</h2>
+                <p>A entrada será gratuita! (Voce para com a alma)</p>
+            </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,33 @@
+@use 'variaveis';
+
+@use 'hero';
+@use 'evento';
+@use 'requisitos';
+@use 'comportamento';
+@use 'entrada';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1024px;
+    width: 100%;
+    
+    @media (max-width:1024px){
+        width: 90%;
+    } 
+    @media (max-width:640px){
+        width: 80%;  
+    }  
+}
+
+.reverse{
+    .container{
+        flex-direction: row-reverse;
+    }
+}
