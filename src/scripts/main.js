@@ -21,5 +21,10 @@ const contador = setInterval(() => {
     const restante = document.getElementById('contador')
     restante.innerHTML = `${diasAteEvento}d ${horasAteEvento}h ${minutosAteEvento}m ${segundosAteEvento}s`
 
+    if(agoraTimeSamp > dataEventoTimeSamp){
+        clearInterval()
+        restante.innerHTML = 'O evento ja ocorreu.'
+    }
+
 
 }, 1000);
